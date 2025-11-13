@@ -24,8 +24,8 @@
         <table>
             <tr><th>ID</th><th>NAME</th><th>GRADE</th></tr>
             <?php
-            $conn=new mysqli("localhost","root","","students/24");
-            $students=$conn->query("Select * from studentss124")->fetch_all(MYSQLI_ASSOC);
+            $conn=new mysqli("localhost","root","","students125");
+            $students=$conn->query("Select * from studentss125")->fetch_all(MYSQLI_ASSOC);
             for($i=0;$i<count($students)-1;$i++){
                 $min=$i;
                 for($j=$i+1;$j<count($students);$j++){
@@ -45,4 +45,5 @@
             ?>
         </table>
     </body>
+
 </html>

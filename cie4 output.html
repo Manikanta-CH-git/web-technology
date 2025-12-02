@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>College Technical Events Participation Form</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+margin: 20px;
+}
+h1 {
+text-align: center;
+color: #333;
+font-size: 32px;
+margin-bottom: 20px;
+}
+table {
+width: 60%;
+margin: 0 auto;
+background-color: #fff;
+border-collapse: collapse;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+td {
+padding: 15px;
+font-size: 18px;
+color: #555;
+}
+th {
+text-align: left;
+padding: 15px;
+background-color: #4CAF50;
+color: white;
+font-size: 20px;
+}
+input[type="text"], input[type="email"], select, textarea {
+width: 100%;
+padding: 6px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+input[type="submit"], input[type="reset"] {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 18px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+background-color: #45a049;
+}
+textarea {
+resize: vertical;
+height: 100px;
+}
+.radio, .checkbox {
+width: auto;
+}
+</style>
+</head>
+<body>
+<h1>College Technical Events Participation Form (2025)</h1>
+<form action="#" method="post">
+<table>
+ <tr>
+   <th colspan="2">Student Information</th>
+ </tr>
+ <tr>
+   <td>Full Name:</td>
+   <td><input type="text" name="fullname" placeholder="Enter your full name"></td>
+ </tr>
+ <tr>
+   <td>USN:</td>
+   <td><input type="text" name="usn" placeholder="Enter your USN"></td>
+ </tr>
+ <tr>
+   <td>Email:</td>
+   <td><input type="email" name="email" placeholder="Enter your college email"></td>
+ </tr>
+ <tr>
+   <td>Department:</td>
+   <td>
+     <select name="department">
+       <option value="">-- Select Department --</option>
+       <option value="CSE">CSE</option>
+       <option value="ECE">ECE</option>
+       <option value="AIDS">AIDS</option>
+       <option value="AIML">AIML</option>
+       <option value="CIVIL">CIVIL</option>
+       <option value="MECHANICAL">MECHANICAL</option>
+     </select>
+   </td>
+ </tr>
+ <tr>
+   <td>Year of Study:</td>
+   <td>
+     <select name="year">
+       <option value="">-- Select Year --</option>
+       <option value="1">1st Year</option>
+       <option value="2">2nd Year</option>
+       <option value="3">3rd Year</option>
+       <option value="4">4th Year</option>
+     </select>
+   </td>
+ </tr>
+ <tr>
+   <th colspan="2">Event Participation (2024–2025)</th>
+ </tr>
+ <tr>
+   <td>Events Participated:</td>
+   <td>
+     <input type="checkbox" name="events" value="hackathon" class="checkbox"> Hackathon
+     <input type="checkbox" name="events" value="coding" class="checkbox"> Coding Challenge
+     <input type="checkbox" name="events" value="robotics" class="checkbox"> Robotics
+     <input type="checkbox" name="events" value="paper" class="checkbox"> Paper Presentation
+     <input type="checkbox" name="events" value="quiz" class="checkbox"> Tech Quiz
+     <input type="checkbox" name="events" value="ai_ml" class="checkbox"> AI/ML Workshop
+     <input type="checkbox" name="events" value="cyber" class="checkbox"> Cyber Security
+     <input type="checkbox" name="events" value="web_design" class="checkbox"> Web Design
+   </td>
+ </tr>
+ <tr>
+   <td>Achievements / Awards:</td>
+   <td><textarea name="achievements" placeholder="Mention any awards or recognitions received"></textarea></td>
+ </tr>
+ <tr>
+   <td>Suggestions for Future Events:</td>
+   <td><textarea name="suggestions" placeholder="Share your ideas for upcoming technical events"></textarea></td>
+ </tr>
+ <tr>
+   <td colspan="2" style="text-align: center;">
+     <input type="submit" value="Submit">
+     <input type="reset" value="Reset">
+   </td>
+ </tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+<title>News Paper</title>
+</head>
+<style>
+header{
+text-align:center;
+background-color:green;
+color:white;
+padding:10px;
+}
+nav{
+text-align:center;
+background-color:black;
+color:#fff;
+padding:10px;
+}
+.section1{
+background-color:whitesmoke;
+}
+.section2{
+background-color:whitesmoke;
+}
+img{
+margin:0;
+text-align:center;
+}
+a{
+color:white;
+}
+main{
+margin-top:10px;
+padding:10px;
+}
+figurecaption{
+font-style:italic;
+font-size:0.4cm;
+}
+aside{
+background-color:whitesmoke;
+flex:1;
+padding:20px;
+}
+table,td,th{
+border:1px solid black;
+border-collapse:collapse;
+}
+td,th{
+padding:15px;
+text-align:center;
+}
+footer{
+text-align:center;
+background-color:green;
+color:white;
+padding:10px;
+}
+</style>
+<body>
+<header>
+<h1>Daily News</h1>
+<h3>Your source for the latest update</h3>
+</header>
+<nav>
+<a href ="#">Home</a>
+<a href ="#">World</a>
+<a href ="#">Space</a>
+<a href ="#">Entertainment</a>
+</nav>
+<main>
+<section>
+<article>
+<div class="section1">
+<h2>Breaking news : Technology Advances</h2>
+<p>The world of technology evoloving at a rapid pace...</p>
+</div>
+<div class="section2">
+<h2>Health:Tips for Better Life</h2>
+<p>Health is wealth . Here are some tips to maintain a healthy lifestyle...</p>
+</div>
+<figure>
+<img src="Sample.jpg" alt="RCB"><br>
+<figurecaption>
+Image:Latest News Update
+</figurecaption> 
+</figure>
+</article>
+</section>
+<section>
+<aside>
+<h2>Advertisement...</h2>
+<p>It is a advertisement..</p>
+</aside>
+<article>
+<p style="text-align:center">Latest sports Scores</p>
+<table style="width:80%">
+<tr>
+<th>Team</th>
+<th>Score</th>
+<th>opponent</th>
+</tr>
+<tr>
+<td>RCB</td>
+<td>98</td>
+<td>CSK</td>
+</tr>
+<tr>
+<td>CSK</td>
+<td>88</td>
+<td>KKR</td>
+</tr>
+<tr>
+<td>PBKS</td>
+<td>73</td>
+<td>RCB</td>
+</tr>
+</table>
+</article>
+</section>
+</main>
+<footer>
+<p>@ all copyrights reserved</p>
+</footer>
+</body>
+</html>

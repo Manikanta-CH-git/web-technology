@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calculator {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 280px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .result-box {
+      background-color: #e9e9e9;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      min-height: 30px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 14px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 120px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>Simple Calculator</h2>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <div class="result-box" id="result">Result will appear here</div>
+
+    <button onclick="calc('sum')">Sum</button>
+    <button onclick="calc('diff')">Difference</button>
+    <button onclick="calc('prod')">Product</button>
+    <button onclick="calc('quot')">Quotient</button>
+    <button onclick="calc('rem')">Remainder</button>
+  </div>
+
+  <script>
+    function calc(type) {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      let result;
+
+      if (isNaN(num1) || isNaN(num2)) {
+        result = " Please enter valid numbers!";
+      } else {
+        switch (type) {
+          case "sum": result = num1 + num2; break;
+          case "diff": result = num1 - num2; break;
+          case "prod": result = num1 * num2; break;
+          case "quot": result = num2 !== 0 ? num1 / num2 : "Cannot divide by 0"; break;
+          case "rem": result = num2 !== 0 ? num1 % num2 : " Cannot divide by 0"; break;
+          default: result = "Invalid operation";
+        }
+      }
+
+      document.getElementById("result").innerText = result;
+    }
+  </script>
+</body>
+</html>
